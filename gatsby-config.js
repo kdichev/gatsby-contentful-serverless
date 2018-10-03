@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'gatsby-starter-default',
         short_name: 'starter',
@@ -17,5 +17,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'd0mfa8wmyzzw',
+        accessToken:
+          '36b71f5fc894c5b39ec2f96d297a8cf506401a34d3a84c29fb8803449c2d7870',
+      },
+    },
   ],
 }
