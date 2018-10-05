@@ -5,6 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.13",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
@@ -21,9 +22,22 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-info": "^3.4.11",
+    "@storybook/addon-knobs": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-runtime": "^6.26.0",
+    "flow-bin": "^0.82.0",
+    "jest": "^23.6.0",
     "prettier": "^1.14.2"
   },
   "repository": {
